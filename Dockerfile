@@ -1,7 +1,7 @@
 FROM openjdk:17-jdk
 
 # Add Author info
-LABEL maintainer="lsy316"
+LABEL maintainer="lsy3166"
 
 # Add a volume to /tmp
 VOLUME /tmp
