@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layouts/layout-sample}">
+
+  <th:block layout:fragment="content">  
+    <div class="row main-head ">
+      <div class="col-12 main-title ">  
+        # User List
+      </div> 
+    </div>
+    <div class="row ">
+      <div class="table-responsive portlet">
+        <table class="table table-sm table-hover tb-success">
+          <tr class="center">
+            <th>User ID</th>
+            <th>User Name</th>
+            <th>Password</th>
+          </tr> 
+		<tr th:each="user : ${users}">
+		   <td th:text="${user.userid}"></td>
+		   <td th:text="${user.username}"></td>
+		   <td th:text="${user.password}"></td>
+		  </tr>
+        </table>    
+      </div>
+    </div>
+  </th:block>      
+</html>

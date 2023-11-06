@@ -1,0 +1,8 @@
+package com.demo.docker.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.demo.docker.model.User;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+}
